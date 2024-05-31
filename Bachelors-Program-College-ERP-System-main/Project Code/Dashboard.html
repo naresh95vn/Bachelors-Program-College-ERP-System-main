@@ -1,0 +1,136 @@
+<html>
+<head>
+<title> Attendance Management System</title>
+<link rel="stylesheet" type="text/css" href="dashboard.css">
+<script type="text/JavaScript" src="dashboard.js"></script> 
+<script type="text/Javascript" src="dashboard1.js"></script>
+</head>
+<body>
+<div class="header">
+ <img src="avatar.png" class="avatar">
+ <h1 class="dashboard">Dashboard</h1>
+ <img src="logout.png" class="logout" onclick="myFunction()">
+ <nav>
+ <ul class="navlist">
+ <li id="Attendance" style="background:white;" 
+onclick="Navigation('AttendanceSlot')">Attendance</li>
+ <li id="Timetable" onclick="Navigation('TimetableSlot')">Timetable</li>
+ <li id="Subject" onclick="Navigation('SubjectSlot')">Subjects</li>
+ <li id="IA Details" onclick="Navigation('IASlot')">IA Details</li>
+ <li id="User Details" onclick="Navigation('UserSlot')">User Details</li>
+ </ul>
+ </nav>
+</div>
+<div id="logoutDropdown">
+<img src="logout.png" class="logout1">
+<p class="user" id="dropdownname">Name</p>
+<input type="submit" name="" value="Change Password" id='changePW'>
+<input type="button" name="" value="Logout" id="logout1">
+</div>
+<div id="AttendanceSlot">
+<div class="graph">
+<div class="Heading">
+<p class="headingtext">Subject Attendence Graph</p>
+</div>
+<div>
+<canvas id="graph1"></canvas>
+</div>
+</div>
+<div class="table">
+<div class="Attendancetable">
+<table class="Atable" id="tableatt">
+<caption>Subject Attendence Percentage</caption>
+<thead>
+<tr><th>Subject</th>
+<th>Classes Conducted</th>
+<th>Classes Attended</th>
+<th>Percentage(%)</th>
+</tr>
+</thead>
+<tbody id='tbb'></tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="TimetableSlot">
+<div class="Container">
+<div class="Heading">
+<h3 class="headingtext">Class Timetable</h3>
+</div>
+<div class="classtable"> </div>
+</div>
+</div>
+<div id="SubjectSlot">
+<div class= "Subjectlist">
+<div class="Heading">
+<h3 class="headingtext">Subjects</h3>
+</div>
+<div class= "tablecontainer">
+<table class="Subtable">
+<tbody>
+<tr id="tr1"><td><b></b></td></tr>
+<tr id="tr2"><td><b></b></td></tr>
+<tr id="tr3"><td><b></b></td></tr>
+<tr id='tr4'><td><b></b></td></tr>
+<tr id="tr5"><td><b></b></td></tr>
+<tr id="tr6"><td><b></b></td></tr>
+<tr id="tr7"><td><b></b></td></tr>
+<tr id="tr8"><td><b></b></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="SubjectSection">
+<h3 class="headingtext">Details</h3>
+<div class="SubContainer">
+<p ><b>Teacher : </b></p>
+<p id="teachername"></p>
+<br>
+<p ><b>website : </b></p>
+<a href"" id="website"></a>
+<br>
+<br>
+<p><b>Syllabus : </b></p>
+<p id="syllabus"></p>
+</div>
+</div>
+</div>
+<div id="IASlot">
+<div class="Container">
+<div class="Heading">
+<h3 class="headingtext">Internal Assesment Performance</h3>
+</div>
+<div class="IAtable">
+<table class="IATtable" id="iadetails">
+<thead>
+<tr><th>Subject name</th>
+<th>IAT 1 Scores</th>
+<th>IAT 2 Scores</th>
+<th>IAT 3 Scores</th>
+<th>Assignments</th>
+<th>Average Scores</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="UserSlot">
+<div class="Container">
+<div class="Heading">
+<h3 class="headingtext">User Details</h3>
+</div>
+<div class="IAtable" id='userdetails'>
+<h2 id="name">Name : </h2>
+<div class="UserDetails">
+<h4> Personal Details </h4>
+<p id="usn">USN : </p> <p id="mobnum">Mobile No. : </p><p id="email">Email : 
+</p> <p id="dob">DOB : </p> <p id="bg">Blood Group : </p> <p id="gender">Gender : </p> <p 
+id="nation">Nationality : </p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
